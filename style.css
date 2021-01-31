@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+  flex-direction: column;
+}
+
+#clock {
+  background-color: #3d3d3d;
+  padding: 0 4rem;
+  font-size: 4rem;
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+  width: 400px;
+  border-radius: 20vw;
+}
+
+p {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+.flex button {
+  background-color: #3d3d3d;
+  border: 1px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -5px,
+    rgba(0, 0, 0, 0.04) 0px 6px 6px 4px;
+  transition: box-shadow 0.5s linear;
+  user-select: none;
+  outline: none;
+}
+
+.flex button:hover {
+  box-shadow: none;
+}
+.flex button:active {
+  transform: scale(0.98);
+}
+
+#start {
+  color: lightgreen;
+  background-color: rgb(242, 255, 242);
+}
+#pause {
+  color: crimson;
+  background-color: rgb(255, 202, 212);
+}
+#reset {
+  color: orange;
+  background-color: rgb(255, 236, 202);
+}
+.start {
+  background-color: rgb(49, 255, 49);
+}
+.pause {
+  background-color: rgb(255, 202, 212);
+}
+
+button {
+  cursor: pointer;
+}
+button:disabled {
+  background-color: crimson;
+  cursor: not-allowed;
+}
